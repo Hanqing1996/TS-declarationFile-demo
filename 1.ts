@@ -1,3 +1,6 @@
+import add from './v'
+
+console.log(add(3,4))
 export interface Person{
     name:string;
     age:number;

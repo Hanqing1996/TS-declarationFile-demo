@@ -15,3 +15,8 @@
   "main": "1.js",
   "type":"1.t.ts",
 ```
+
+#### 在 ts 中引用 js
+1. 创建 v.js，export 一个函数 add
+2. 创建 v.d.ts，声明 add 的函数类型。编译器会自动将 v.js 与 v.d.ts 绑定
+3. 在 1.js 中 引用 add
