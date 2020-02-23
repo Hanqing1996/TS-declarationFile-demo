@@ -20,3 +20,19 @@
 1. 创建 v.js，export 一个函数 add
 2. 创建 v.d.ts，声明 add 的函数类型。编译器会自动将 v.js 与 v.d.ts 绑定
 3. 在 1.js 中 引用 add
+
+#### 在 ts 中创建 window 变量
+1. 在 1.ts 中进行声明
+```
+declare global {
+    interface Window {
+        server: {
+            host: String
+        }
+    }
+}
+```
+2. 直接在 2.ts 中使用
+```
+console.log(window.server.host)
+```
