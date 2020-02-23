@@ -36,3 +36,15 @@ declare global {
 ```
 console.log(window.server.host)
 ```
+
+#### 扩展 react 模块
+1. 在 1.ts 中进行声明
+```
+declare module 'react'{
+    const xxx:Number
+}
+```
+2. 直接在 2.ts 中使用
+```
+console.log(React.xxx)
+```
